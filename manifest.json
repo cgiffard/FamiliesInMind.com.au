@@ -1,0 +1,7 @@
+{
+    "/":            "templates/index.jade",
+    "/about":       "templates/about.jade",
+    "/contact":     "templates/contact.jade",
+    "/services":    "templates/services.jade",
+    "/referral":    "templates/referral.jade"
+}

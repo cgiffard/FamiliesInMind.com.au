@@ -1,0 +1,3 @@
+# Templates
+
+Core template resources.
