@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/cgiffard/FamiliesInMind.com.au",
   "dependencies": {
+    "after": "^0.8.1",
+    "colors": "^1.0.3",
     "jade": "^1.9.2",
     "markdown": "^0.5.0",
     "myth": "^1.4.0"

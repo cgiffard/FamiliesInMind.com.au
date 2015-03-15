@@ -1,3 +1,6 @@
 RewriteEngine On
 RewriteBase /
-RewriteRule ^about$ about.html
+RewriteRule ^/about$ /about.html
+RewriteRule ^/services$ /services.html
+RewriteRule ^/referral$ /referral.html
+RewriteRule ^/contact$ /contact.html

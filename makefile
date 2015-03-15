@@ -13,8 +13,7 @@ assets:
 	@echo "No asset generation for now."
 
 html:
-	jade templates/_layout.jade -o ./build --pretty
-	@echo "jade here";
+	@./build.js
 
 clean:
 	@echo "Deleting..."
