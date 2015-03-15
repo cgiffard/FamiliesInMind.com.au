@@ -1,0 +1,22 @@
+{
+  "name": "familiesinmind.com.au",
+  "version": "1.0.0",
+  "description": "Generators for the front-end of familiesinmind.com.au",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cgiffard/FamiliesInMind.com.au.git"
+  },
+  "keywords": [
+    "Website"
+  ],
+  "author": "Christopher Giffard (christopher.giffard@cgiffard.com)",
+  "license": "All Website Content Copyright (2015) Families In Mind Psychology",
+  "bugs": {
+    "url": "https://github.com/cgiffard/FamiliesInMind.com.au/issues"
+  },
+  "homepage": "https://github.com/cgiffard/FamiliesInMind.com.au"
+}
