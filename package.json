@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/cgiffard/FamiliesInMind.com.au/issues"
   },
-  "homepage": "https://github.com/cgiffard/FamiliesInMind.com.au"
+  "homepage": "https://github.com/cgiffard/FamiliesInMind.com.au",
+  "dependencies": {
+    "jade": "^1.9.2",
+    "markdown": "^0.5.0",
+    "myth": "^1.4.0"
+  }
 }

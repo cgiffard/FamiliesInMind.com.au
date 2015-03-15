@@ -1,7 +1,7 @@
 {
-    "/":            "templates/index.jade",
-    "/about":       "templates/about.jade",
-    "/contact":     "templates/contact.jade",
-    "/services":    "templates/services.jade",
-    "/referral":    "templates/referral.jade"
+    "/":            { "template": "templates/index.jade" },
+    "/about":       { "template": "templates/about.jade",    "name": "About" },
+    "/services":    { "template": "templates/services.jade", "name": "Services" },
+    "/referral":    { "template": "templates/referral.jade", "name": "Referral" },
+    "/contact":     { "template": "templates/contact.jade",  "name": "Contact" }
 }

@@ -1,7 +1,7 @@
 # Build the templates and assets, for remote
 # deployment
 
-build: install test assets templates
+build: install test assets html
 
 install:
 	npm install
@@ -12,5 +12,10 @@ test:
 assets:
 	@echo "No asset generation for now."
 
-templates:
+html:
+	jade templates/_layout.jade -o ./build --pretty
 	@echo "jade here";
+
+clean:
+	@echo "Deleting..."
+	@rm -rfv ./build/*.html
