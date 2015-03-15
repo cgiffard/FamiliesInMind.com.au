@@ -1,1 +1,8 @@
 h1.logo Families In Mind Psychology
+nav: ul.nav
+    if nav
+        each navItem in nav
+            if (navItem.path === page.path)
+                li.selected: a(href=navItem.path)= navItem.name
+            else
+                li: a(href=navItem.path)= navItem.name

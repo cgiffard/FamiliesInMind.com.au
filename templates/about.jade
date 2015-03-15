@@ -1,2 +1,22 @@
-include ../content/about.jade
-include _layout.jade
+extends _layout.jade
+
+block body
+    section.stripe.columns
+        .leftcol
+            block intro
+        aside.rightcol
+            block contact-callout
+
+    aside.stripe.aboutbg
+        block midbar
+
+    section.stripe.columns
+        .leftcol
+            block leftcol
+
+        .rightcol
+            block rightcol
+
+    section.stripe.columns
+        .leftcol
+            block moredetail

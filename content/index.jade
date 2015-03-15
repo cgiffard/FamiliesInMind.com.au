@@ -1,9 +1,11 @@
+extends ../templates/index.jade
+
 block header
     h2 Are you worried about your child's behaviour?
     h2 Becoming a parent?
     h2 Finding parenting a challenge?
 
-block body-left
+block leftcol
     h2 We know what that's like.
     p.
         Parenting can feel overwhelming and stressful at times.
@@ -15,3 +17,6 @@ block body-left
         Families in Mind Psychology is a clinical and therapeutic
         service specialising in working with families with young
         children and babies, parents, and those expecting a child.
+
+block rightcol
+    include _contact-callout.jade

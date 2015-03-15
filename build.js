@@ -8,7 +8,7 @@ var jade	= require("jade"),
 	colors	= require("colors");
 
 const OUT_DIR			= path.join(__dirname, "build");
-const TEMPLATE_DIR		= path.join(__dirname, "templates");
+const CONTENT_DIR		= path.join(__dirname, "content");
 const PATH_HTACCESS		= path.join(OUT_DIR, ".htaccess");
 
 // Load the list of pages
@@ -77,9 +77,9 @@ function compilePages(pages, done) {
 			pages[page].path = page;
 			return pages[page];
 		})
-		.forEach(function(page) {
+		.forEach(function(page, index, array) {
 			var pagePath = page.path === "/" ? "index" : page.path,
-				templateFullPath = path.join(TEMPLATE_DIR, page.template),
+				templateFullPath = path.join(CONTENT_DIR, page.template),
 				htmlOutputPath = path.join(OUT_DIR, pagePath + ".html"),
 				template;
 
@@ -93,7 +93,10 @@ function compilePages(pages, done) {
 					pretty: true
 				});
 
-			fs.writeFileSync(htmlOutputPath, template(page));
+			fs.writeFileSync(
+				htmlOutputPath,
+				template({ page: page, nav: array}));
+
 			console.log("-  Written out to %s".dim, htmlOutputPath);
 		});
 

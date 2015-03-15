@@ -1,2 +1,19 @@
-include ../content/contact.jade
-include _layout.jade
+extends _layout.jade
+
+block body
+    section.stripe.columns
+        .leftcol
+            block intro
+        aside.popover
+            block map-popover
+
+    aside.stripe.map
+        //- will eventually point to gmaps
+        iframe(src="http://familiesinmind.com.au/")
+
+    section.stripe.columns
+        .leftcol
+            block leftcol
+
+        .rightcol
+            block rightcol

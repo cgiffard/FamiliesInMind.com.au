@@ -1,4 +1,13 @@
 doctype
 html
     head
-        title= "title" in this ? title + " | Families In Mind Psychology" : "Families In Mind Psychology"
+        title= page.name + " | Families In Mind Psychology"
+        include _styles.jade
+    body
+        main
+            header
+                include _header.jade
+            article.body
+                block body
+            footer
+                include ../content/_footer.jade

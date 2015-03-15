@@ -1,2 +1,13 @@
-include ../content/home.jade
-include _layout.jade
+extends _layout.jade
+
+block body
+    section
+        .stripe.fancy.child
+            block header
+
+        .stripe.columns
+            .leftcol
+                block leftcol
+
+            .rightcol
+                block rightcol

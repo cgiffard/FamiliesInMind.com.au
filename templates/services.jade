@@ -1,2 +1,18 @@
-include ../content/services.jade
-include _layout.jade
+extends _layout.jade
+
+block body
+    section.stripe.fancy
+            block header
+
+    section.stripe.columns
+        .leftcol
+            block leftcol
+
+        .rightcol
+            block rightcol
+
+    aside.stripe.intermission
+        block intermission
+
+    section.stripe.bottom-detail
+        block bottom-detail

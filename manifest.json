@@ -1,7 +1,7 @@
 {
-    "/":            { "template": "index.jade" },
-    "/about":       { "template": "about.jade",    "name": "About" },
-    "/services":    { "template": "services.jade", "name": "Services" },
-    "/referral":    { "template": "referral.jade", "name": "Referral" },
-    "/contact":     { "template": "contact.jade",  "name": "Contact" }
+    "/":            { "template": "index.jade",    "name": "Home"       },
+    "/about":       { "template": "about.jade",    "name": "About"      },
+    "/services":    { "template": "services.jade", "name": "Services"   },
+    "/referral":    { "template": "referral.jade", "name": "Referral"   },
+    "/contact":     { "template": "contact.jade",  "name": "Contact"    }
 }

@@ -1,4 +1,4 @@
--var title="About Our Organisation"
+extends ../templates/about.jade
 
 block intro
     h1 About Our Organisation
@@ -12,12 +12,20 @@ block intro
         | account family relationships — both as a way of understanding these
         | challenges, and working with you to make things better.
 
+block contact-callout
+    include _contact-callout.jade
+
 block midbar
     .staff-profile-images
         img(
+            aria-labelledby="profileImages"
             src="/images/staff-profile-images.jpg"
             alt="Photos of Liz Challis, Sonia Costello, and Anna Huber"
         )
+    .staff-names#profileImages
+        span Liz Challis
+        span Sonia Costello
+        span Anna Huber
 
 block leftcol
     p
@@ -39,7 +47,7 @@ block rightcol
     p
         | We can tailor the way we work to meet the needs of families or
         | professionals. We are able to provide individual consultation, group
-        | programs as well as supervison, assessment, training, consultancy and
+        | programs as well as supervision, assessment, training, consultancy and
         | research collaboration.
 
     p: a(href="/services")
