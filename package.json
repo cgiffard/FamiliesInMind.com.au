@@ -21,6 +21,7 @@
   "homepage": "https://github.com/cgiffard/FamiliesInMind.com.au",
   "dependencies": {
     "after": "^0.8.1",
+    "chokidar": "^1.0.0-rc4",
     "colors": "^1.0.3",
     "jade": "^1.9.2",
     "markdown": "^0.5.0",

@@ -1,0 +1,15 @@
+body {
+	font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #111;
+}
+
+h2 {
+	font-family: AvenirNext-Medium;
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.stripe.fancy h2 {
+	color: #CCCCCC;
+}
