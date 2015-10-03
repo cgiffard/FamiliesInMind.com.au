@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-var jade	= require("jade"),
-	myth	= require("myth"),
+var jade		= require("jade"),
+	myth		= require("myth"),
 	fs		= require("fs"),
-	path	= require("path"),
+	path		= require("path"),
 	after	= require("after"),
 	colors	= require("colors");
 
@@ -62,7 +62,8 @@ function generateHtAccess(pages, outStream, done) {
 			return page.path != "/";
 		})
 		.forEach(function(page) {
-			var rule = "RewriteRule ^" + page.path + "$ " + page.path + ".html";
+			var path = page.path.replace(/^\//, "");
+			var rule = "RewriteRule ^" + path + "$ " + path + ".html";
 			console.log(rule.dim);
 			outStream.write(rule + "\n", "utf8", next);
 		});

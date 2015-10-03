@@ -2,11 +2,13 @@ extends _layout.jade
 
 block body
     section.stripe.fancy
-            block header
+        .columns
+            .col: block header
 
-    section.stripe.columns
-        .leftcol
-            block leftcol
+    section.stripe
+        .columns
+            .col
+                block leftcol
 
-        .rightcol
-            block rightcol
+            .col
+                block rightcol

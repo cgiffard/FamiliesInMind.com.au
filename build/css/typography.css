@@ -1,15 +1,143 @@
 body {
   font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 10pt;
-  color: #111;
+  font-size: 12pt;
+  color: #252525;
+  line-height: 1.5rem;
 }
 
+h1,
 h2 {
-  font-family: AvenirNext-Medium;
+  font-family: AvenirNext-Medium, "Avenir Next", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
-  line-height: 1;
+  line-height: 1.4em;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-bottom: 1rem;
+}
+
+.upper,
+h4 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+p,
+ul {
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+}
+
+li ul {
+  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 760px) {
+  h1,
+  h2 {
+    line-height: 2rem;
+  }
+}
+
+.stripe.fancy {
+  color: white;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 .stripe.fancy h2 {
   color: #CCCCCC;
+  font-weight: normal;
+  text-shadow: rgba(0,0,0,0.75) 0px 0px 20px;
+}
+
+.stripe.fancy h2 + p {
+  margin-top: 1rem;
+}
+
+a {
+  color: #777;
+  font-weight: bold;
+}
+
+a:active,
+a:hover {
+  color: #D62536 !important;
+  border-bottom-color: #D62536 !important;
+}
+
+a:visited {
+  color: #AAA;
+}
+
+ul.nav li a {
+  display: block;
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: right;
+  font-weight: normal;
+}
+
+ul.nav li.selected a {
+  color: #D62536;
+}
+
+footer {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+footer .abn {
+  display: inline-block;
+  color: #AAA;
+  padding-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-left: solid #CCC 1px;
+}
+
+.contactBlock {
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.icon {
+  padding-left: 2rem;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1rem auto;
+}
+
+.icon.telephone {
+  background-image: url(../images/icon-telephone.svg);
+}
+
+.icon.email {
+  background-image: url(../images/icon-email.svg);
+}
+
+.icon a {
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 0.4rem;
+  border-bottom: dashed #AAA 1px;
+  margin-bottom: -0.4rem;
+  font-weight: normal;
+}
+
+.normal {
+  font-size: 1rem;
+  color: #999;
 }

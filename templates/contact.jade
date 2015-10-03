@@ -1,19 +1,24 @@
 extends _layout.jade
 
 block body
+
+    -var mapURL = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d814.2638050645136!2d149.1256259!3d-35.2797533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164d425fd8e813%3A0x99805c9b17e9c2b8!2s28+University+Ave%2C+Canberra+ACT+2601!5e0!3m2!1sen!2sau!4v1443851614718";
+
     section.stripe.columns
-        .leftcol
+        .col
             block intro
         aside.popover
             block map-popover
 
-    aside.stripe.map
-        //- will eventually point to gmaps
-        iframe(src="http://familiesinmind.com.au/")
+    aside.stripe.map#map
 
-    section.stripe.columns
-        .leftcol
-            block leftcol
+    section.stripe
+        .columns
+            .col
+                block leftcol
+    
+            .col
+                block rightcol
 
-        .rightcol
-            block rightcol
+    script(src="/js/maps.js")
+    script(async, defer, src="http://maps.google.com/maps/api/js?sensor=false&callback=initMap")
