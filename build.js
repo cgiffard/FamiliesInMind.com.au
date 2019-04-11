@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 var jade		= require("jade"),
-	myth		= require("myth"),
 	fs		= require("fs"),
 	path		= require("path"),
 	after	= require("after"),
