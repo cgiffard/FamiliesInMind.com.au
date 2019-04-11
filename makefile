@@ -11,11 +11,16 @@ assets:
 	@echo "CSS Generation complete.";
 
 html:
+	@for file in $$(cd content && find . -type f -not -name "*.jade" -not -name "README.md");\
+	do\
+		mkdir -p build/$$(dirname $$file);\
+		cp content/$$file build/$$(dirname $$file);\
+	done;
 	@./build.js
 
 clean:
 	@echo "Deleting...";
-	@rm -rfv ./build/*.html ./build/css ./build/.htaccess;
+	@rm -rf build;
 
 watch:
 	./watch.js
