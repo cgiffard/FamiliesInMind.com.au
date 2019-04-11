@@ -1,16 +1,12 @@
 # Build the templates and assets, for remote
 # deployment
 
-build: install test assets html
-
-install:
-	@echo "Checking installed dependencies...";
-	npm install
+build: test assets html
 
 test:
 	@echo "No tests for now.";
 
-assets: install
+assets:
 	@mkdir -p build/css
 	@for style in $$(ls style);\
 	do\
