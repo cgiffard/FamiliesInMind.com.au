@@ -7,12 +7,7 @@ test:
 	@echo "No tests for now.";
 
 assets:
-	@mkdir -p build/css
-	@for style in $$(ls style);\
-	do\
-		echo "Generating $$style";\
-		./node_modules/.bin/myth ./style/$$style > ./build/css/$$style;\
-	done;
+	@./node_modules/.bin/postcss style/*.css --use autoprefixer --dir build/css
 	@echo "CSS Generation complete.";
 
 html:
